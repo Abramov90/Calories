@@ -1,0 +1,11 @@
+nav .nav, #facebookLogin{
+    display: none;
+}
+
+.btn.btn-lg.btn-primary{
+    display: block;
+    margin: 200px;
+}
+.alert-success{
+    display: none;
+}

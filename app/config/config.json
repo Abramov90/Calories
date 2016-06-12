@@ -1,0 +1,16 @@
+{
+    "port": 3000,
+    "appID": "188694231526502",
+    "appSecret": "2eadf027b66387c230a89fb31cb97f5b",
+    "appURI": "http://localhost",
+    "database": {
+        "URI": "mongodb://localhost:27017/calories",
+        "settings": {
+            "server":{
+                "socketOptions": {
+                "keepAlive": 1
+                }
+            }
+        }
+    }
+}

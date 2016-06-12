@@ -1,0 +1,34 @@
+<% include header %>
+
+<h1><%= title %></h1>
+
+<div class="alert alert-success hidden" role="alert">Value successfully added.</div>
+
+<form class="form-inline">
+	<div class="form-group">
+		<label class="sr-only" for="product">Food name</label>
+		<input type="text" class="form-control" id="product" placeholder="Example: Orange">
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="calories">Calories Value</label>
+		<input type="text" class="form-control" id="calories" placeholder="Example: 200">
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="name">User Name</label>
+		<% if (facebook) { %>
+			<input type="text" class="form-control" id="name" value="<%= facebook.displayName %>">
+		<% } else { %>
+			<input type="text" class="form-control" id="name" placeholder="John Doe">
+		<%} %>
+
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="date">Date</label>
+		<input type="text" class="form-control span2" id="date" value="" placeholder="Date" data-date-format="mm/dd/yy">
+	</div>
+	<button type="submit" class="btn btn-default">Add calories</button>
+</form>
+
+<script type="text/javascript" src="javascripts/main.js"></script>
+
+<% include footer %>

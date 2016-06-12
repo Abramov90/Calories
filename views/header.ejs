@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calories</title>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="/css/justified-nav.css" rel="stylesheet">
+
+	<link href='/css/style.css' rel='stylesheet' />
+	<link href='https://vitalets.github.io/bootstrap-datepicker/bootstrap-datepicker/css/datepicker.css' rel='stylesheet' />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://vitalets.github.io/bootstrap-datepicker/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+</head>
+<body>
+<div class="masthead">
+	<h1>Calories</h1>
+	<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+	<!--<button type="button" id="facebookLogin" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Facebook</button>-->
+	<% if (facebook) { %>
+	<div class="alert alert-success" role="alert">
+		<strong>
+			Hello <%= facebook.displayName %>!
+		</strong>
+		<a href="/">Logout</a>
+	</div>
+	<% } %>
+
+	<nav>
+		<ul class="nav nav-justified">
+			<li><a href="/main">Add Calories</a></li>
+			<li><a href="/profile">View Calories</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="exampleModalLabel">Facebook Login</h4>
+			</div>
+			<div class="modal-body">
+				<form class="onl_loginForm" action="" autocomplete="off" method="POST">
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+						<input type="text" class="form-control" name="username" placeholder="Username">
+					</div>
+					<span class="help-block"></span>
+
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+						<input type="password" class="form-control" name="password" placeholder="Password">
+					</div>
+					<span class="help-block"></span>
+
+					<button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fa fa-sign-in"></i> Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

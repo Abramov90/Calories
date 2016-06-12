@@ -1,0 +1,9 @@
+{
+    "port": "3000",
+    "databaseURL": "mogodb://localhost:27017/calories",
+    "html": "../server/views",
+    "script": "../server/js",
+    "appID": "188694231526502",
+    "appSecret": "2eadf027b66387c230a89fb31cb97f5b",
+    "appIP": "http://localhost"
+}
